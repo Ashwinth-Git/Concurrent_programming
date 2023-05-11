@@ -1,0 +1,71 @@
+"C:\Program Files\Java\jdk-17.0.5\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.3\lib\idea_rt.jar=59031:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Users\ashwi\IdeaProjects\Concurrent\out\production\Concurrent Programming" coursework.PrintingSystem
+
+[ Analyzing paper level ] - Paper level is critical and needs to be refilled!!! ( Current Paper Level: 100 )
+Paper has been refilled! ( Current Paper Level: 150 )
+[ Analyzing toner level ] - Waiting for toner cartridge to reach minimum level. ( Current Toner Level: 50 )
+[ Student 1 ] - Printed a document: ( Document ID: Student 1_DOC_1 | Document Name: Document_01 | Page Count: 7 )
+[ Existing Resources ] - Current Paper Level: 143 | Current Toner Level: 43
+[ Student 2 ] - Printed a document: ( Document ID: Student 2_DOC_1 | Document Name: Document_01 | Page Count: 11 )
+[ Existing Resources ] - Current Paper Level: 132 | Current Toner Level: 32
+[ Student 4 ] - Printed a document: ( Document ID: Student 4_DOC_1 | Document Name: Document_01 | Page Count: 4 )
+[ Existing Resources ] - Current Paper Level: 128 | Current Toner Level: 28
+[ Student 3 ] - Printed a document: ( Document ID: Student 3_DOC_1 | Document Name: Document_01 | Page Count: 14 )
+[ Existing Resources ] - Current Paper Level: 114 | Current Toner Level: 14
+Toner level is not sufficient, waiting for a toner replacement
+Toner level is not sufficient, waiting for a toner replacement
+[ Analyzing toner level ] - Waiting for toner cartridge to reach minimum level. ( Current Toner Level: 14 )
+[ Student 3 ] - Printed a document: ( Document ID: Student 3_DOC_2 | Document Name: Document_02 | Page Count: 5 )
+[ Existing Resources ] - Current Paper Level: 109 | Current Toner Level: 9
+Toner level is not sufficient, waiting for a toner replacement
+[ Analyzing toner level ] - Toner level is critical and needs to be replaced!!! ( Current Toner Level: 9 )
+Toner cartridge replaced! ( Current Toner Level: 500 )
+[ Student 1 ] - Printed a document: ( Document ID: Student 1_DOC_2 | Document Name: Document_02 | Page Count: 15 )
+[ Existing Resources ] - Current Paper Level: 94 | Current Toner Level: 485
+[ Student 4 ] - Printed a document: ( Document ID: Student 4_DOC_2 | Document Name: Document_02 | Page Count: 15 )
+[ Existing Resources ] - Current Paper Level: 79 | Current Toner Level: 470
+[ Analyzing paper level ] - Paper level is critical and needs to be refilled!!! ( Current Paper Level: 79 )
+Paper has been refilled! ( Current Paper Level: 129 )
+[ Student 2 ] - Printed a document: ( Document ID: Student 2_DOC_2 | Document Name: Document_02 | Page Count: 9 )
+[ Existing Resources ] - Current Paper Level: 120 | Current Toner Level: 461
+[ Student 1 ] - Printed a document: ( Document ID: Student 1_DOC_3 | Document Name: Document_03 | Page Count: 14 )
+[ Existing Resources ] - Current Paper Level: 106 | Current Toner Level: 447
+[ Analyzing toner level ] - Waiting for toner cartridge to reach minimum level. ( Current Toner Level: 447 )
+[ Student 3 ] - Printed a document: ( Document ID: Student 3_DOC_3 | Document Name: Document_03 | Page Count: 7 )
+[ Existing Resources ] - Current Paper Level: 99 | Current Toner Level: 440
+[ Student 4 ] - Printed a document: ( Document ID: Student 4_DOC_3 | Document Name: Document_03 | Page Count: 19 )
+[ Existing Resources ] - Current Paper Level: 80 | Current Toner Level: 421
+[ Student 3 ] - Printed a document: ( Document ID: Student 3_DOC_4 | Document Name: Document_04 | Page Count: 20 )
+[ Existing Resources ] - Current Paper Level: 60 | Current Toner Level: 401
+Toner Technician Finished, number of toner cartridge(s) replaced: 1
+[ Analyzing paper level ] - Paper level is critical and needs to be refilled!!! ( Current Paper Level: 60 )
+Paper has been refilled! ( Current Paper Level: 110 )
+[ Student 4 ] - Printed a document: ( Document ID: Student 4_DOC_4 | Document Name: Document_04 | Page Count: 10 )
+[ Existing Resources ] - Current Paper Level: 100 | Current Toner Level: 391
+[ Student 1 ] - Printed a document: ( Document ID: Student 1_DOC_4 | Document Name: Document_04 | Page Count: 5 )
+[ Existing Resources ] - Current Paper Level: 95 | Current Toner Level: 386
+[ Student 2 ] - Printed a document: ( Document ID: Student 2_DOC_3 | Document Name: Document_03 | Page Count: 18 )
+[ Existing Resources ] - Current Paper Level: 77 | Current Toner Level: 368
+[ Student 1 ] - Printed a document: ( Document ID: Student 1_DOC_5 | Document Name: Document_05 | Page Count: 3 )
+[ Existing Resources ] - Current Paper Level: 74 | Current Toner Level: 365
+[ Student 3 ] - Printed a document: ( Document ID: Student 3_DOC_5 | Document Name: Document_05 | Page Count: 18 )
+[ Existing Resources ] - Current Paper Level: 56 | Current Toner Level: 347
+Paper Technician Finished, pack(s) of paper used: 3
+[ Student 4 ] - Printed a document: ( Document ID: Student 4_DOC_5 | Document Name: Document_05 | Page Count: 13 )
+[ Existing Resources ] - Current Paper Level: 43 | Current Toner Level: 334
+Student 1 Finished Printing: 5 Documents, with a page count of 44 Pages.
+[ Student 2 ] - Printed a document: ( Document ID: Student 2_DOC_4 | Document Name: Document_04 | Page Count: 1 )
+[ Existing Resources ] - Current Paper Level: 42 | Current Toner Level: 333
+Student 3 Finished Printing: 5 Documents, with a page count of 64 Pages.
+Student 4 Finished Printing: 5 Documents, with a page count of 61 Pages.
+[ Student 2 ] - Printed a document: ( Document ID: Student 2_DOC_5 | Document Name: Document_05 | Page Count: 7 )
+[ Existing Resources ] - Current Paper Level: 35 | Current Toner Level: 326
+Student 2 Finished Printing: 5 Documents, with a page count of 46 Pages.
+
+
+All tasks completed and successfully executed!
+Printing final report.....
+
+[ Printer Report ] - Current state of printer: ( Printer: 101 | Name: Ink Jet | Paper Level: 35 | Toner Level: 326 | Documents Printed: 20 )
+
+
+Process finished with exit code 0
