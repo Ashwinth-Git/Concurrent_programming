@@ -1,0 +1,35 @@
+// The range and constants
+range SHEETS_OF_PAPER = 0..3
+const MINIMUM_SHEETS_OF_PAPER = 0
+const MAXIMUM_SHEETS_OF_PAPER = 3
+
+// The sets
+set Students = { student1, student2 }
+set Users = { Students, technician }
+
+// Actions that should not be performed by Students and Technicians separately
+set ForbiddenStudentActions = { acquireToReplace, replace, cannotReplace }
+set ForbiddenTechnicianActions = { acquireToPrint }
+
+// Printer sub-process
+PRINTER = PRINTER_IN_OPERATION[MAXIMUM_SHEETS_OF_PAPER],
+PRINTER_IN_OPERATION[papersInTray: SHEETS_OF_PAPER] = 
+									if (papersInTray > MINIMUM_SHEETS_OF_PAPER)// checking if there is atleast 1 sheet of paper
+									then (acquireToPrint -> release -> PRINTER_IN_OPERATION[papersInTray - 1]
+											| acquireToReplace -> cannotReplace -> release -> PRINTER_IN_OPERATION[papersInTray])
+									else // there is no paper to print 
+										(acquireToReplace -> replace -> release -> PRINTER_IN_OPERATION[MAXIMUM_SHEETS_OF_PAPER]).
+
+// Student sub-process
+STUDENT(DOCUMENTS = 1) = USE_PRINTER[1],
+USE_PRINTER[documentNo: 1..DOCUMENTS] = (acquireToPrint -> printDocument[documentNo] -> release ->
+								if(documentNo + 1 <= DOCUMENTS) // checking if student has finished printing the documents
+								then USE_PRINTER[documentNo + 1] // allowing the student to print the rest of the documents if the student hasn't finished printing
+								else (terminate -> END)) + ForbiddenStudentActions. 
+
+// Technician sub-process
+TECHNICIAN = (acquireToReplace -> { replace, cannotReplace } -> release -> TECHNICIAN | terminate -> END) + ForbiddenTechnicianActions.
+
+// Parallel composition of all the sub-processes
+||PRINTING_SYSTEM = ( student1: STUDENT(3) || student2: STUDENT(2) || technician: TECHNICIAN || Users :: PRINTER )
+						/ { terminate / Users.terminate }.
